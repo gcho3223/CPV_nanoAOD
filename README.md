@@ -1,32 +1,35 @@
-# SBNanoNtuple
+# SSBNanoNtuple
 
 This repository contains scripts and configurations for working with NanoAOD files in the CMS software framework. The following instructions describe how to set up the environment and install this package.
 
-Installation Instructions
+---
 
-1. Load CMS Environment
+## **Installation Instructions**
 
+### **1. Load CMS Environment**
 Load the CMS default environment:
-
+```bash
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 
-2. Check CMSSW Compatibility
+### **2. Check CMSSW Compatibility**
 
 Verify the compatibility of your gcc version with the desired CMSSW version:
 
 scram list CMSSW_13_3_0
 
-3. Set Architecture
+### **3. Set Architecture**
 
 Set the appropriate architecture for your system:
-
-For KNU:
+	•	For KNU:
 
 export SCRAM_ARCH=slc7_amd64_gcc12
 
-For lxplus:
+
+	•	For lxplus:
 
 export SCRAM_ARCH=el8_amd64_gcc12
+
+
 
 4. Create and Initialize CMSSW Environment
 
@@ -59,6 +62,5 @@ Summary
 
 By following these steps, you will have the SSBNanoNtuple package installed and ready to use within the PhysicsTools/NanoAODTools directory in your CMSSW environment. Ensure that you are using the correct architecture (SCRAM_ARCH) based on your system.
 
-If you encounter any issues during installation, please feel free to contact the repository maintainer or open an issue on GitHub.
-
+If you encounter any issues during installation, please feel free to contact me. 
 
