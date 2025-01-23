@@ -65,7 +65,7 @@ Use the `script.py` to generate directory structures, configuration files, and c
 
 #### **Basic Command**
 ```bash
-python3 script.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --WorkName TestV1 --UserID physicist87
+python3 script.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --WorkName TestV1 --UserID sha 
 ```
 
 - **Options:**
@@ -108,7 +108,7 @@ TTToSemiLeptonic_TuneCP5_powheg, /TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/
 
 2. **Running for 2017 MC:**
    ```bash
-   python3 script.py --inputList DataAndMCList/UL2017_MC.txt --WorkName TestRun --UserID physicist87
+   python3 script.py --inputList DataAndMCList/UL2017_MC.txt --WorkName TestRun --UserID sha 
    ```
    This will create the directory: `TestRun/2017/MC`.
 
