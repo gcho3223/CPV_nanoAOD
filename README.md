@@ -8,15 +8,15 @@ This repository contains scripts and configurations for working with NanoAOD fil
 
 ### **1. Load CMS Environment**
 Load the CMS default environment:
-''''bash
+````bash
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-''''
+````
 ### **2. Check CMSSW Compatibility**
 
 Verify the compatibility of your gcc version with the desired CMSSW version:
-
+````bash
 scram list CMSSW_13_3_0
-
+````
 ### **3. Set Architecture**
 
 Set the appropriate architecture for your system:
