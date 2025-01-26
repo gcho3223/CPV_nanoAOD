@@ -15,27 +15,27 @@ samples=(
     #"ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_powheg"
     #"ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_powheg"
     #"ST_s-channel_4f_leptonDecays_TuneCP5_amcatnlo"
-    "ST_t-channel_top_4f_InclusiveDecays_TuneCP5_powheg-madspin"
+    #"ST_t-channel_top_4f_InclusiveDecays_TuneCP5_powheg-madspin"
     #"ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_powheg-madspin"
     #"WW_TuneCP5_pythia8"
     #"WZ_TuneCP5_pythia8"
     #"ZZ_TuneCP5_pythia8"
-    "TTZToQQ_TuneCP5_amcatnlo"
+    #"TTZToQQ_TuneCP5_amcatnlo"
     #"TTZToQQ_TuneCP5_13TeV_amcatnlo"
     #"TTZToLLNuNu_M-10_TuneCP5_amcatnlo"
     #"TTWJetsToLNu_TuneCP5_amcatnloFXFX-madspin"
     #"TTWJetsToQQ_TuneCP5_amcatnloFXFX-madspin"
     #"QCD_Pt-1000_MuEnrichedPt5_TuneCP5_pythia8"
-    "QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_pythia8"
+    #"QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_pythia8"
     #"QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_pythia8"
     #"QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_pythia8"
     #"QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_pythia8"
     #"QCD_Pt-20_MuEnrichedPt15_TuneCP5_pythia8"
-    "QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_pythia8"
-    "QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_pythia8"
-    "QCD_Pt-30_MuEnrichedPt4_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_pythia8"
+    #"QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_pythia8"
+    #"QCD_Pt-30_MuEnrichedPt4_TuneCP5_13TeV_pythia8"
     #"QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_pythia8"
-    "QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_pythia8"
+    #"QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_pythia8"
     #"QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_pythia8"
     #"QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_pythia8"
     #"QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_pythia8"
@@ -50,50 +50,50 @@ samples=(
     #"QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_pythia8"
     #"QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_pythia8"
     #"QCD_Pt-40ToInf_DoubleEMEnriched_MGG-80ToInf_TuneCP5_pythia8"
-    "QCD_Pt_1000to1400_TuneCP5_13TeV_pythia8"
-    "QCD_Pt_120to170_TuneCP5_13TeV_pythia8"
-    "QCD_Pt_1400to1800_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_1000to1400_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_120to170_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_1400to1800_TuneCP5_13TeV_pythia8"
     #"QCD_Pt_15to30_TuneCP5_13TeV_pythia8"
-    "QCD_Pt_170to300_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_170to300_TuneCP5_13TeV_pythia8"
     #"QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8"
     #"QCD_Pt_2400to3200_TuneCP5_13TeV_pythia8"
     #"QCD_Pt_300to470_TuneCP5_13TeV_pythia8"
     #"QCD_Pt_30to50_TuneCP5_13TeV_pythia8"
     #"QCD_Pt_3200toInf_TuneCP5_13TeV_pythia8"
-    "QCD_Pt_470to600_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_470to600_TuneCP5_13TeV_pythia8"
     #"QCD_Pt_50to80_TuneCP5_13TeV_pythia8"
-    "QCD_Pt_600to800_TuneCP5_13TeV_pythia8"
-    "QCD_Pt_800to1000_TuneCP5_13TeV_pythia8"
-    "QCD_Pt_80to120_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_600to800_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_800to1000_TuneCP5_13TeV_pythia8"
+    #"QCD_Pt_80to120_TuneCP5_13TeV_pythia8"
     #"QCD_HT300to500_TuneCP5_PSWeights_madgraph"
     #"QCD_HT200to300_TuneCP5_PSWeights_madgraph"
     #"QCD_HT100to200_TuneCP5_PSWeights_madgraph"
-    "QCD_HT500to700_TuneCP5_PSWeights_madgraph"
+    #"QCD_HT500to700_TuneCP5_PSWeights_madgraph"
     #"QCD_HT700to1000_TuneCP5_PSWeights_madgraph"
     #"QCD_HT1000to1500_TuneCP5_PSWeights_madgraph"
     #"QCD_HT1500to2000_TuneCP5_PSWeights_madgraph"
     #"QCD_HT2000toInf_TuneCP5_PSWeights_madgraph"
 )
-# define sample type #
+### define sample type ###
 sample_type="MC"
-
-# create log file #
+### create log file ###
 log_path="./Crab_Summary/2018"
 mkdir -p ${log_path}/${sample_type}
 if [ "$1" == "re" ] || [ "$1" == "-r" ]; then
-    log_file="${log_path}/${sample_type}/UL2018_${sample_type}_resubmit_log.txt"
+    log_file="${log_path}/${sample_type}/UL2018_${sample_type}_resubmit_log_test.txt"
 else
     log_file="${log_path}/${sample_type}/UL2018_${sample_type}_status_log.txt"
 fi
 > ${log_file}
 echo "log file: ${log_file}"
-# progress bar variables #
+### progress bar variables ###
 total_sample=0
 completed=0
 for sample in "${samples[@]}"; do
     total_sample=$((total_sample + 1))
 done
-
+### failed job list ###
+failed_job=()
 ################################
 # check status for each sample #
 ################################
@@ -105,9 +105,20 @@ for sample in "${samples[@]}";
     if [ -d "$crab_dir" ]; then
         echo "[[[[[[[[[[[ ${sample} ]]]]]]]]]]]" >> ${log_file}
         crab status -d "$crab_dir" 2>/dev/null | grep -E "Status on the CRAB server|Status on the scheduler|Jobs status" >> ${log_file}
+        # Jobs status가 failed인지 확인
+        if crab status -d "$crab_dir" 2>/dev/null | grep -q "Jobs status.*finished"; then
+            failed_job+=("$sample")
+        fi
     fi
     ((completed++))
     progress=$(( (completed * 100) / total_sample )) 
     echo -ne "Checking status for sample(${completed}/${total_sample}, ${progress}%): ${sample}\r"
+done
+###############################
+# summary for failed job list #
+###############################
+echo "------------------------------------ Summary for failed job list -----------------------------------------------" >> ${log_file}
+for failed in "${failed_job[@]}"; do
+    echo ${failed}"," >> ${log_file}
 done
 echo "Done!! Check the log file for more details."
