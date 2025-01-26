@@ -176,7 +176,7 @@ Crab_Summary/<run_year>/<data_type>/*_resubmit_log.txt # for resubmitted jobs
 1. **Automatic VOMS Proxy Check**:
    - Before executing CRAB commands, the script ensures that a valid VOMS proxy exists. If not, it prompts the user to create one using:
      ```bash
-     voms-proxy-init
+     voms-proxy-init -voms cms
      ```
 
 2. **CRAB Environment Setup**:
