@@ -145,9 +145,7 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
 ./crab_status.sh
 ```
 - Before running the command, you NEED TO SET SAMPLES!!
-```bash
-./crab_status.sh
-```
+
 #### crab summary
 - summary of the crab jobs is in the Crab_Summary directory
 ```bash
