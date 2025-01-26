@@ -106,7 +106,7 @@ for sample in "${samples[@]}";
         echo "[[[[[[[[[[[ ${sample} ]]]]]]]]]]]" >> ${log_file}
         crab status -d "$crab_dir" 2>/dev/null | grep -E "Status on the CRAB server|Status on the scheduler|Jobs status" >> ${log_file}
         # Jobs status가 failed인지 확인
-        if crab status -d "$crab_dir" 2>/dev/null | grep -q "Jobs status.*finished"; then
+        if crab status -d "$crab_dir" 2>/dev/null | grep -q "Jobs status.*failed"; then
             failed_job+=("$sample")
         fi
     fi
