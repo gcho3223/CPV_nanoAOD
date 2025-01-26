@@ -19,7 +19,13 @@ def create_crab_config(sub_dir, short_name, input_dataset, run_period, file_type
     units_per_job = 10 if is_data else 1
     branchlist_file = f"branchlist_Run2_{file_type}.txt"
     # Include WorkName in the output directory path
-    out_lfn_dir = f"/store/user/{user_id}/UL20NanoAOD/{work_name}/{run_period}/{file_type}/"
+    #out_lfn_dir = f"/store/user/{user_id}/UL20NanoAOD/{work_name}/{run_period}/{file_type}/"
+    out_lfn_dir = f"/store/user/{user_id}/CPV_ntuple/NanoAOD/{work_name}/{run_period}/{file_type}/"
+    #####################################################
+    # work_name is user-customized name                 #
+    # run_period is 2016PreVFP, PostVFP, 17, 18, ...    #
+    # file_type is Data or MC                           #
+    #####################################################
 
     config_content = f"""from WMCore.Configuration import Configuration
 
