@@ -137,6 +137,33 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
   crab status -d <crab_directory>
   ```
 
+### **3. Checking status**
+- you can check the status of the crab jobs by running the following command:
+```bash
+./crab_status.sh
+```
+- Before running the command, you NEED TO SET SAMPLES!!
+```bash
+./crab_status.sh
+```
+#### crab summary
+- summary of the crab jobs is in the Crab_Summary directory
+```bash
+Crab_Summary/2018/MC/UL2018_MC_status_log.txt
+Crab_Summary/2018/MC/UL2018_MC_resubmit_log.txt # for resubmitted jobs
+```
+- There are sample names, Status on the CRAB server, Status on the scheduler, Jobs status in the log file
+
+### **4. Resubmitting jobs**
+- you can resubmit the jobs by running the following command:
+```bash
+./crab_resubmit.sh re
+./crab_resubmit.sh -r
+```
+- argument '-r' or 're' is for resubmitted jobs
+- Before running the command, you *NEED TO SET SAMPLES!!*
+- log file for resubmitted jobs is in the Crab_Summary directory as a *_resubmit_log.txt
+
 #### **Key Features**
 1. **Automatic VOMS Proxy Check**:
    - Before executing CRAB commands, the script ensures that a valid VOMS proxy exists. If not, it prompts the user to create one using:
