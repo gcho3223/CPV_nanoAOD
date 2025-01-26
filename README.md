@@ -143,8 +143,11 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
 - you can check the status of the crab jobs by running the following command:
 ```bash
 ./crab_status.sh
+./crab_status.sh re or ./crab_status.sh -r
 ```
-- Before running the command, you NEED TO SET SAMPLES!!
+- Before running the command, you *NEED TO SET SAMPLES!!*
+- argument '-r' or 're' is for resubmitted jobs
+- summary file is in the Crab_Summary directory as a **_status_log.txt** for the first submitted jobs and **_resubmit_log.txt** for the resubmitted jobs
 
 #### crab summary
 - summary of the crab jobs is in the Crab_Summary directory
@@ -159,12 +162,9 @@ Crab_Summary/2018/MC/UL2018_MC_resubmit_log.txt # for resubmitted jobs
 ### **4. Resubmitting jobs**
 - you can resubmit the jobs by running the following command:
 ```bash
-./crab_resubmit.sh re
-./crab_resubmit.sh -r
+./crab_resubmit.sh
 ```
-- argument '-r' or 're' is for resubmitted jobs
 - Before running the command, you *NEED TO SET SAMPLES!!*
-- log file for resubmitted jobs is in the Crab_Summary directory as a *_resubmit_log.txt
 
 ---
 
