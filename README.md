@@ -151,13 +151,13 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
 ```
 - Before running the command, you *NEED TO SET SAMPLES!!*
 - argument '-r' or 're' is for resubmitted jobs
-- summary file is in the Crab_Summary directory as a **_status_log.txt** for the first submitted jobs and **_resubmit_log.txt** for the resubmitted jobs
+- summary file is in the Crab_Summary directory as a **~_status_log.txt** for the first submitted jobs and **~_resubmit_log.txt** for the resubmitted jobs
 
 #### crab summary
 - summary of the crab jobs is in the Crab_Summary directory
 ```bash
-Crab_Summary/2018/MC/UL2018_MC_status_log.txt
-Crab_Summary/2018/MC/UL2018_MC_resubmit_log.txt # for resubmitted jobs
+Crab_Summary/<run_year>/<data_type>/*_status_log.txt
+Crab_Summary/<run_year>/<data_type>/*_resubmit_log.txt # for resubmitted jobs
 ```
 - There are sample names, Status on the CRAB server, Status on the scheduler, Jobs status in the log file
 
