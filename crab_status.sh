@@ -8,8 +8,8 @@ samples=(
     #"DYJetsToLL_M-10to50_TuneCP5_amcatnloFXFX"
     #"DYJetsToLL_M-10to50_TuneCP5_madgraphMLM"
     #"TTTo2L2Nu_TuneCP5_powheg"
-    "TTToHadronic_TuneCP5_powheg"
-    "TTToSemiLeptonic_TuneCP5_powheg"
+    #"TTToHadronic_TuneCP5_powheg"
+    #"TTToSemiLeptonic_TuneCP5_powheg"
     #"TTJets_TuneCP5_amcatnloFXFX"
     #"TTJets_TuneCP5_madgraphMLM"
     #"ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_powheg"
@@ -73,14 +73,36 @@ samples=(
     #"QCD_HT1000to1500_TuneCP5_PSWeights_madgraph"
     #"QCD_HT1500to2000_TuneCP5_PSWeights_madgraph"
     #"QCD_HT2000toInf_TuneCP5_PSWeights_madgraph"
+    ############# Data #############
+    "SingleMuon_Run2018A"
+    "SingleMuon_Run2018B"
+    "SingleMuon_Run2018C"
+    "SingleMuon_Run2018D"
+    "DoubleMuon_Run2018A"
+    "DoubleMuon_Run2018B"
+    "DoubleMuon_Run2018C"
+    "DoubleMuon_Run2018D"
+    "EGamma_Run2018A"
+    "EGamma_Run2018B"
+    "EGamma_Run2018C"
+    "EGamma_Run2018D"
 )
-### define sample type ###
-sample_type="MC"
+######################
+# define sample type #
+######################
+if [ "$1" == "mc" ]; then
+    sample_type="MC"
+elif [ "$1" == "data" ]; then
+    sample_type="Data"
+else
+    echo "Please specify sample type: mc or data"
+    exit 1
+fi
 ### create log file ###
 log_path="./Crab_Summary/2018"
 mkdir -p ${log_path}/${sample_type}
 if [ "$1" == "re" ] || [ "$1" == "-r" ]; then
-    log_file="${log_path}/${sample_type}/UL2018_${sample_type}_resubmit_log_test.txt"
+    log_file="${log_path}/${sample_type}/UL2018_${sample_type}_resubmit3_log.txt"
 else
     log_file="${log_path}/${sample_type}/UL2018_${sample_type}_status_log.txt"
 fi
