@@ -127,6 +127,15 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
   - `--WorkName`: Name of the working directory.
   - `--crabCommand`: CRAB command to execute (`submit` or `status`).
 
+#### **Another submit file**
+```bash
+./crab_submit.sh submit <sample_type>
+```
+- **Options:**
+  - `submit`: crab job submission
+  - `resubmit`: crab job resubmission
+  - `<sample_type>`: data or mc
+
 #### **Command for Status Checking**
 ```bash
 python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --WorkName TestV1 --crabCommand status
@@ -147,11 +156,11 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
 - resubmit_option is about resubmitted jobs
 - sample_type is about data or mc
 ```bash
-./crab_status.sh re data
-./crab_status.sh re mc
+./crab_status.sh resubmit data
+./crab_status.sh resubmit mc
 ```
 - Before running the command, you *NEED TO SET SAMPLES!!*
-- you can also use '-r' option instead of 're' for resubmitted jobs
+- `resubmit` option is for resubmitted jobs
 - summary file is in the Crab_Summary directory as a **~_status_log.txt** for the first submitted jobs and **~_resubmit_log.txt** for the resubmitted jobs
 
 #### crab summary
