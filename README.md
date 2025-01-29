@@ -176,10 +176,10 @@ Crab_Summary/<run_year>/<data_type>/*_resubmit_log.txt # for resubmitted jobs
 ### **4. Resubmitting jobs**
 - you can resubmit the jobs by running the following command:
 ```bash
-./crab_resubmit.sh <sample_type>
+./crab_submit.sh resubmit <sample_type>
 ```
 - Before running the command, you *NEED TO SET SAMPLES!!*
-
+- <sample_type> is about 'data' or 'mc'
 ---
 
 ### ***5. counting files after crab is done***
