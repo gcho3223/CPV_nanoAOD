@@ -90,9 +90,9 @@ samples=(
 ###########################################
 # < script usage >                        #
 # ./crab_status.sh [option] [sample_type] #
-# option:                                 #
-#     -r or re: for resubmitted jobs      #
-# sample_type: data or mc                 #
+# - option:                               #
+#   resubmit: for resubmitted jobs        #
+# - sample_type: data or mc               #
 ###########################################
 # define sample type #
 ######################
