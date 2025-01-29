@@ -142,15 +142,16 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
 ### **3. Checking status**
 - you can check the status of the crab jobs by running the following command:
 ```bash
-./crab_status.sh
+./crab_status.sh <resubmit_option> <sample_type>
 ```
-- for resubmitted jobs, you can run the following command:
+- resubmit_option is about resubmitted jobs
+- sample_type is about data or mc
 ```bash
-./crab_status.sh re
-./crab_status.sh -r
+./crab_status.sh re data
+./crab_status.sh re mc
 ```
 - Before running the command, you *NEED TO SET SAMPLES!!*
-- argument '-r' or 're' is for resubmitted jobs
+- you can also use '-r' option instead of 're' for resubmitted jobs
 - summary file is in the Crab_Summary directory as a **~_status_log.txt** for the first submitted jobs and **~_resubmit_log.txt** for the resubmitted jobs
 
 #### crab summary
@@ -166,11 +167,19 @@ Crab_Summary/<run_year>/<data_type>/*_resubmit_log.txt # for resubmitted jobs
 ### **4. Resubmitting jobs**
 - you can resubmit the jobs by running the following command:
 ```bash
-./crab_resubmit.sh
+./crab_resubmit.sh <sample_type>
 ```
 - Before running the command, you *NEED TO SET SAMPLES!!*
 
 ---
+
+### ***5. counting files after crab is done***
+- to check the number of ntuple files after crab is done, you can run the following command:
+```bash
+./fileNumCheck.sh <sample_type>
+```
+- sample_type is about 'data' or 'mc'
+- fileNumCheck_<sample_type>.txt is created in the directory where you run the fileNumCheck.sh
 
 #### **Key Features**
 1. **Automatic VOMS Proxy Check**:
