@@ -74,25 +74,31 @@ samples=(
     #"QCD_HT1500to2000_TuneCP5_PSWeights_madgraph"
     #"QCD_HT2000toInf_TuneCP5_PSWeights_madgraph"
     ############# Data #############
-    "SingleMuon_Run2018A"
-    "SingleMuon_Run2018B"
-    "SingleMuon_Run2018C"
+    #"SingleMuon_Run2018A"
+    #"SingleMuon_Run2018B"
+    #"SingleMuon_Run2018C"
     "SingleMuon_Run2018D"
-    "DoubleMuon_Run2018A"
-    "DoubleMuon_Run2018B"
-    "DoubleMuon_Run2018C"
+    #"DoubleMuon_Run2018A"
+    #"DoubleMuon_Run2018B"
+    #"DoubleMuon_Run2018C"
     "DoubleMuon_Run2018D"
-    "EGamma_Run2018A"
-    "EGamma_Run2018B"
-    "EGamma_Run2018C"
+    #"EGamma_Run2018A"
+    #"EGamma_Run2018B"
+    #"EGamma_Run2018C"
     "EGamma_Run2018D"
 )
-######################
+###########################################
+# < script usage >                        #
+# ./crab_status.sh [option] [sample_type] #
+# option:                                 #
+#     -r or re: for resubmitted jobs      #
+# sample_type: data or mc                 #
+###########################################
 # define sample type #
 ######################
-if [ "$1" == "mc" ]; then
+if [ "$2" == "mc" ]; then
     sample_type="MC"
-elif [ "$1" == "data" ]; then
+elif [ "$2" == "data" ]; then
     sample_type="Data"
 else
     echo "Please specify sample type: mc or data"
@@ -141,6 +147,6 @@ done
 ###############################
 echo "------------------------------------ Summary for failed job list -----------------------------------------------" >> ${log_file}
 for failed in "${failed_job[@]}"; do
-    echo ${failed}"," >> ${log_file}
+    echo ${failed} >> ${log_file}
 done
 echo "Done!! Check the log file for more details."

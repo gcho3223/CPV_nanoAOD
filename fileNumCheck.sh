@@ -1,5 +1,11 @@
 #! /bin/bash
 
+###########################################
+# < script usage >                        #
+# ./fileNumCheck.sh [sample_type]         #
+# sample_type: data or mc                 #
+###########################################
+
 ### define path ###
 path="/u/user/gcho/SE_UserHome/CPV_ntuple/NanoAOD"
 ### case of data or mc ###
@@ -13,7 +19,7 @@ elif [ "$1" == "mc" ]; then
     file_name=fileNumCheck_mc.txt
     > ${file_name}
 else
-    echo "Invalid argument: data or mc"
+    echo "Please specify sample type: data or mc"
     exit 1
 fi
 ### change directory ###

@@ -77,16 +77,20 @@ samples=(
     #"SingleMuon_Run2018A"
     #"SingleMuon_Run2018B"
     #"SingleMuon_Run2018C"
-    #"SingleMuon_Run2018D"
-    "DoubleMuon_Run2018A"
-    "DoubleMuon_Run2018B"
-    "DoubleMuon_Run2018C"
-    #"DoubleMuon_Run2018D"
-    "EGamma_Run2018A"
-    "EGamma_Run2018B"
-    "EGamma_Run2018C"
-    #"EGamma_Run2018D"
+    "SingleMuon_Run2018D"
+    #"DoubleMuon_Run2018A"
+    #"DoubleMuon_Run2018B"
+    #"DoubleMuon_Run2018C"
+    "DoubleMuon_Run2018D"
+    #"EGamma_Run2018A"
+    #"EGamma_Run2018B"
+    #"EGamma_Run2018C"
+    "EGamma_Run2018D"
 )
+###########################################
+# < script usage >                        #
+# ./crab_resubmit.sh [sample_type]        #
+# sample_type: data or mc                 #
 ###############################################
 #            ** IMPORTANT **                  #
 # Before resubmit, CHECK the failed samples!! #
