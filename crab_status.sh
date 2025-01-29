@@ -107,7 +107,7 @@ fi
 ### create log file ###
 log_path="./Crab_Summary/2018"
 mkdir -p ${log_path}/${sample_type}
-if [ "$1" == "re" ] || [ "$1" == "-r" ]; then
+if [ "$1" == "resubmit" ]; then
     log_file="${log_path}/${sample_type}/UL2018_${sample_type}_resubmit3_log.txt"
 else
     log_file="${log_path}/${sample_type}/UL2018_${sample_type}_status_log.txt"
@@ -129,7 +129,7 @@ echo "Now Starting..... Progress will appear after the first sample check is com
 for sample in "${samples[@]}";
     do
     # define crab directory #
-    crab_dir="./Crab_jobs/2018/${sample_type}/${sample}/crab_${sample}"
+    crab_dir="./UL2018_Data/2018/${sample_type}/${sample}/crab_${sample}"
     if [ -d "$crab_dir" ]; then
         echo "[[[[[[[[[[[ ${sample} ]]]]]]]]]]]" >> ${log_file}
         crab status -d "$crab_dir" 2>/dev/null | grep -E "Status on the CRAB server|Status on the scheduler|Jobs status" >> ${log_file}
