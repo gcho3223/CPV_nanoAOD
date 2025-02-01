@@ -151,13 +151,16 @@ python3 crabAutosubmit.py --inputList DataAndMCList/UL2016PreVFP_MC_Test.txt --W
 ### **3. Checking status**
 - you can check the status of the crab jobs by running the following command:
 ```bash
-./crab_status.sh <resubmit_option> <sample_type>
+./crab_status.sh <resubmit_option> <sample_type> <log_type>
 ```
 - resubmit_option is about resubmitted jobs
 - sample_type is about data or mc
+- log_type is about full or simple
+  - full: record full status
+  - simple: record simple status (Status on the CRAB server, Status on the scheduler, Jobs status)
 ```bash
-./crab_status.sh resubmit data
-./crab_status.sh resubmit mc
+./crab_status.sh resubmit data full
+./crab_status.sh resubmit mc simple
 ```
 - Before running the command, you *NEED TO SET SAMPLES!!*
 - `resubmit` option is for resubmitted jobs
