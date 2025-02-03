@@ -7,7 +7,7 @@
 ###########################################
 
 ### define path ###
-path="/u/user/gcho/SE_UserHome/CPV_ntuple/NanoAOD"
+path="/pnfs/knu.ac.kr/data/cms/store/user/gcho/CPV_ntuple/NanoAOD"
 ### case of data or mc ###
 if [ "$1" == "data" ]; then
     path="$path/UL2018_Data/2018/Data"
@@ -31,13 +31,23 @@ for i in *;
     do
     if [ "$1" == "data" ]; then
         cd $path/$i
-        for j in *;
+        for j in *; # loop over all samples
             do
             echo $j >> /u/user/gcho/TopPhysics/CPV/NanoAOD/CMSSW_13_3_0/src/PhysicsTools/NanoAODTools/SSBNanoNtuple/${file_name}
+            find $j -type f -name "tree_1.root" -print | while read -r file_path; do
+                truncated_path=$(dirname "$file_path")
+                truncated_path=$(dirname "$truncated_path")
+                echo "$path/$i/$truncated_path" >> /u/user/gcho/TopPhysics/CPV/NanoAOD/CMSSW_13_3_0/src/PhysicsTools/NanoAODTools/SSBNanoNtuple/${file_name}
+            done
             find $j -type f -name "*.root" | wc -l >> /u/user/gcho/TopPhysics/CPV/NanoAOD/CMSSW_13_3_0/src/PhysicsTools/NanoAODTools/SSBNanoNtuple/${file_name}
         done
         elif [ "$1" == "mc" ]; then
         echo $i >> /u/user/gcho/TopPhysics/CPV/NanoAOD/CMSSW_13_3_0/src/PhysicsTools/NanoAODTools/SSBNanoNtuple/${file_name}
+        find $i -type f -name "tree_1.root" -print | while read -r file_path; do
+            truncated_path=$(dirname "$file_path")
+            truncated_path=$(dirname "$truncated_path")
+            echo "$path/$truncated_path" >> /u/user/gcho/TopPhysics/CPV/NanoAOD/CMSSW_13_3_0/src/PhysicsTools/NanoAODTools/SSBNanoNtuple/${file_name}
+        done
         find $i -type f -name "*.root" | wc -l >> /u/user/gcho/TopPhysics/CPV/NanoAOD/CMSSW_13_3_0/src/PhysicsTools/NanoAODTools/SSBNanoNtuple/${file_name}
     fi
 done
